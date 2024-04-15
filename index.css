@@ -1,0 +1,83 @@
+body{
+    background-color: #161a21;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.mainsection{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1360px;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+li{
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+}
+li:hover{
+    font-size: 19px;
+    transition: all 0.2s ease-in-out;
+}
+.mainmenu{
+    display: flex;
+list-style: none;
+gap: 15px;
+}
+.containersection{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.mainsectioncontnt{
+ height: 85%;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ text-align: left;
+ gap: 50px;
+}
+.textitem{
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+.secondarytext{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.explorebutton{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.explorebutton:hover{
+    width: 180px;
+    height: 35px;
+    background-color: #263042;
+    transition: all 0.2s ease-in-out;
+    gap: 10px;
+    color: white;
+}
