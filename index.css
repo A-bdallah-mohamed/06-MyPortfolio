@@ -1,12 +1,13 @@
 body{
-    background-color: #161a21;
+    background-color: #0f0f0f;
     color: white;
     font-family: 'Lexend Deca', sans-serif;
+    overflow-x: hidden;
 }
 .mainsection{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 600px;
     max-width: 1360px;
     width: 100%;
 }
@@ -36,6 +37,7 @@ gap: 15px;
     align-items: center;
     justify-content: center;
     width: 100%;
+    flex-direction: column;
 }
 .mainsectioncontnt{
  height: 85%;
@@ -76,8 +78,102 @@ gap: 15px;
 .explorebutton:hover{
     width: 180px;
     height: 35px;
-    background-color: #263042;
+    background-color: #36454f;
     transition: all 0.2s ease-in-out;
     gap: 10px;
     color: white;
+}
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.skillslogos{
+    display: flex;
+    gap: 20px;
+
+}
+.skillcard{
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+       transition: all 0.2s ease-in-out;
+}
+.secondsection{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1360px;
+}
+.skillcard:hover{
+    width: 90px;
+       transition: all 0.2s ease-in-out;
+
+}
+.understanding2{
+    display: flex;
+    align-items: center;
+overflow: hidden;
+    min-width: 500px;
+    min-height: 400px;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    flex-direction: column;
+    gap: 10px;
+}
+.basic{
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+    align-items: center;
+    overflow-x: auto;
+    max-width: 90%;
+}
+.understanding{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.classcartui{
+    display: flex;
+    gap: 5px;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.work{
+    margin-top: 45px;
+}
+.understandingimg{
+    width: 100%;
+    height: auto;
+}
+.projectdata{
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
