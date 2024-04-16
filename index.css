@@ -276,6 +276,16 @@ opacity: 1;
     margin-bottom: 15px;
     transition: all 0.4s ease-in-out;
 }
+.basic2{
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+height: auto;
+width: 1360px;
+}
 .basic{
     display: flex;
     justify-content: center;
@@ -325,4 +335,41 @@ width: 1360px;
     flex-direction: column;
     width: 90%;
     height: 100%;
+}
+@media screen  and (max-width: 500px) {
+    .textitem{
+        font-size: 15px;
+    }
+    ul{
+        padding: 0;
+    }
+    .secondarytext{
+        gap: 15px;
+    }
+    .skillslogos{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 20px;
+justify-content: center;
+    }
+    .understanding2{
+        width: 300px;
+    }
+    .basic{
+        width: 100vw;
+        gap: 100px;
+    }
+    .buttonscontainer{
+        flex-direction: column;
+    }
+    .understanding2:hover .buttonscontainer{
+        gap: 20px;
+        transition: all 0.4s ease-in-out;
+    }
+.phonework{
+    font-size: 25px;
+}
+.fourthsection{
+    margin-bottom: 50px;
+}
 }
