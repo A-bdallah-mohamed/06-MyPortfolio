@@ -359,6 +359,9 @@ justify-content: center;
         width: 100vw;
         gap: 100px;
     }
+    .basic2{
+        width: 100vw;
+    }
     .buttonscontainer{
         flex-direction: column;
     }
