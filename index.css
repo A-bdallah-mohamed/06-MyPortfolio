@@ -1,3 +1,7 @@
+*{
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
 body{
     background-color: #0f0f0f;
     color: white;
@@ -7,7 +11,7 @@ body{
 .mainsection{
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 100vh;
     max-width: 1360px;
     width: 100%;
 }
@@ -20,11 +24,16 @@ body{
 }
 li{
 cursor: pointer;
-transition: all 0.2s ease-in-out;
+color: white;
+transition: all 0.1s ease-in-out;
+}
+a{
+    color: inherit;
 }
 li:hover{
     font-size: 19px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    color: #eb631b;
 }
 .mainmenu{
     display: flex;
@@ -78,7 +87,7 @@ gap: 15px;
 .explorebutton:hover{
     width: 180px;
     height: 35px;
-    background-color: #36454f;
+    background-color: #eb631b;
     transition: all 0.2s ease-in-out;
     gap: 10px;
     color: white;
@@ -89,6 +98,7 @@ gap: 15px;
     justify-content: center;
     flex-direction: column;
     gap: 15px;
+    margin-top: 50px;
 }
 .skillslogos{
     display: flex;
@@ -96,7 +106,7 @@ gap: 15px;
 
 }
 .skillcard{
-    width: 80px;
+    width: 100px;
     height: 30px;
     background-color: white;
     color: black;
@@ -109,7 +119,7 @@ gap: 15px;
        transition: all 0.2s ease-in-out;
 }
 .secondsection{
-    height: 600px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,29 +127,164 @@ gap: 15px;
     gap: 20px;
     max-width: 1360px;
 }
-.skillcard:hover{
-    width: 90px;
-       transition: all 0.2s ease-in-out;
+.thirdsection{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1360px;
+}
+.fourthsection{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1360px;
+}
+.contactcard{
+    display: flex;
+    font-size: 40px;
+    gap: 5px;
+    transition: all 0.4s ease-in-out;
+}
+.understanding3:hover{
+    width: 450px;
 
+}
+.understanding3:hover .contactcard{
+gap: 15px;
+transition: all 0.4s ease-in-out;
+}
+.understanding3:hover button{
+    position: relative;
+    opacity: 1;
+width: 100px;
+border: none;
+border-radius: 15px;
+     transition: Width 0.4s ease-in-out;
+     
+}
+.contactcard button{
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+         transition: Width 0.4s ease-in-out;
+         font-size: 30px;
+         cursor: pointer;
+         background-color: white;
+}
+.contactcard button:hover{
+width: 120px;
+background-color: #eb631b;
+color: white;
+}
+.skillcard:hover{
+    width: 120px;
+       transition: all 0.2s ease-in-out;
+background-color: #eb631b;
+color: white;
+font-weight: bold;
+}
+.understanding3{
+    display: flex;
+    align-items: center;
+overflow: hidden;
+width: 300px;
+  height: 100px;
+    border-radius: 10px;
+    background-color: #2b2b2b;
+    flex-direction: column;
+    gap: 10px;
+           transition: all 0.2s ease-in-out;
+           justify-content: center;
 }
 .understanding2{
     display: flex;
     align-items: center;
 overflow: hidden;
-    min-width: 500px;
-    min-height: 400px;
+width: 400px;
+  height: 360px;
     border-radius: 10px;
     background-color: #2b2b2b;
     flex-direction: column;
     gap: 10px;
+           transition: all 0.2s ease-in-out;
+}
+.understanding2:hover{
+    width: 500px;
+    height: 450px;
+           transition: all 0.2s ease-in-out;
+           transition-delay: 0.1s;
+}
+.understanding2:hover .buttonscontainer{
+    gap: 40px;
+    transition: all 0.4s ease-in-out;
+}
+.visitbutton{
+    background-color: #eb631b;
+}
+.sourcebutton{
+    background-color: #ebebdf;
+}
+.visitbutton ,.sourcebutton{
+    opacity: 0;
+    pointer-events: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+     transition: all 0.2s ease-in-out;
+
+}
+
+.understanding2:hover .visitbutton{
+opacity: 1;
+   pointer-events: all;
+    transition: all 0.2s ease-in-out;
+        width: 200px;
+        
+}
+.understanding2:hover .visitbutton:hover{
+width: 220px;
+     font-weight: bold;
+     font-size: 15px;
+}
+.understanding2:hover .sourcebutton:hover{
+    width: 220px;
+         font-weight: bold;
+         font-size: 15px;
+    }
+.understanding2:hover .sourcebutton{
+opacity: 1;
+   pointer-events:all ;
+    transition: all 0.2s ease-in-out;
+        width: 200px;
+        
+}
+.buttonscontainer{
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: all 0.4s ease-in-out;
 }
 .basic{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 55px;
     align-items: center;
-    overflow-x: auto;
+    flex-wrap: wrap;
     max-width: 90%;
+height: auto;
+width: 1360px;
 }
 .understanding{
     display: flex;
@@ -164,7 +309,9 @@ overflow: hidden;
     margin: 0;
 }
 .work{
+    font-size: 35px;
     margin-top: 45px;
+    margin-bottom: 45px;
 }
 .understandingimg{
     width: 100%;
@@ -176,4 +323,6 @@ overflow: hidden;
     gap: 20px;
     display: flex;
     flex-direction: column;
+    width: 90%;
+    height: 100%;
 }
